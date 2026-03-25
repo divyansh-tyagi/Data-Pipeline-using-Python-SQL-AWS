@@ -6,7 +6,7 @@ print(df.info())
 df = df.drop_duplicates()
 
 df["director"] = df["director"].fillna("Unknown")
-df["cast"] = df["cast"].fillna("Not Available")
+df["cast_members"] = df["cast_members"].fillna("Not Available")
 df["country"] = df["country"].fillna("Unknown")
 
 df["rating"] = df["rating"].fillna(df["rating"].mode()[0]) #used most frequent value
@@ -19,8 +19,9 @@ print(df["type"].value_counts())
 
 df["content_type"] = df["type"]
 
-df["year_added"] = df["date_added"].dt.year 
-
+df["year_added"] = df["date_added"].dt.year.astype("Int64")
+print(df["year_added"].head(10))
+print(df["year_added"].dtype)
 top_countries = df["country"].value_counts().head(5)
 print(top_countries)
 
