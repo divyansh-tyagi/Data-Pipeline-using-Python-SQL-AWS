@@ -1,16 +1,25 @@
-# Netflix Data Pipeline Project
+Built an end-to-end data pipeline using Python, SQL, AWS S3, PostgreSQL and Power BI.
 
-## Overview
-Built an end-to-end data pipeline using Python, SQL, and Power BI.
+Steps
+Cleaned raw dataset using pandas
+Uploaded cleaned dataset to AWS S3
+Loaded data into PostgreSQL
+Performed SQL analysis
+Built interactive dashboard in Power BI
+Tools Used
 
-## Steps
-- Cleaned raw dataset using pandas
-- Loaded data into PostgreSQL
-- Performed SQL analysis
-- Built interactive dashboard in Power BI
+Python, Pandas, AWS S3, PostgreSQL, Power BI
 
-## Tools Used
-Python, Pandas, PostgreSQL, Power BI
+🔄 Pipeline Flow
+
+CSV → pandas → AWS S3 → PostgreSQL → SQL Analysis → Power BI Dashboard
+
+☁️ AWS S3 Integration
+
+The cleaned dataset is stored in AWS S3 to simulate a real-world cloud storage layer in the data pipeline.
+
+S3 Object URL:
+https://netflix-data-pipeline-divyansh.s3.ap-south-1.amazonaws.com/netflix_cleaned.csv
 
 ## 📊 Dashboard Preview
 
